@@ -5,16 +5,15 @@ $grey-shadow: rgba(0, 0, 0, 0.25);
 
 .NavBarStyled {
     height: 65px;
-    //box-shadow: 0px 4px 4px $grey-shadow;
     display: flex;
     align-items: center;
+    margin: 15px 0px 15px 0px;
 }
 
 .Logo {
-    margin-left: 1rem;
     height: 45px;
     cursor: pointer;
-    margin-top: 15px;
+    margin-left: 2rem;
 }
 
 .TabsList {
@@ -24,6 +23,14 @@ $grey-shadow: rgba(0, 0, 0, 0.25);
     justify-content: flex-end;
     margin-left: auto;
     margin-right: 3rem;
+
+    @media screen and (max-width: 1024px) {
+        gap: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .Tab {
@@ -42,7 +49,6 @@ $grey-shadow: rgba(0, 0, 0, 0.25);
     box-shadow: 5px 5px 0px #000000;
     border-radius: 4px;
     padding: 1px 15px 1px 15px;
-    margin-top: 15px;
 
     &:hover {
         cursor: pointer;
@@ -51,10 +57,19 @@ $grey-shadow: rgba(0, 0, 0, 0.25);
     }
 }
 
+.HamburgerStyled {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 2rem;
+    display: none;
 
-.Button {
-    background: $primary-purple;
-    border: 5px solid $secondary-purple;
-    box-shadow: $grey-shadow;
-    border-radius: 10px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.HamburgerImg {
+    height: 20px;
+    cursor: pointer;
 }
