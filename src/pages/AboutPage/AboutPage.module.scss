@@ -1,8 +1,4 @@
 
-.AboutStyled {
-  margin: 100px 0 100px 0;
-}
-
 .Parent {
   display: flex;
   flex-direction: row;
@@ -10,7 +6,7 @@
 
 .LeftChild {
   height: 300px;
-  margin: 400px 10% 0 10%;
+  margin: 300px 10% 0 10%;
 
   &:hover {
     transform: translate(-10px, -10px);
@@ -23,7 +19,7 @@
 }
 
 .RightChild {
-  margin: 100px 10% 0 0;
+  margin: 0 10% 0 0;
 
   //@media screen and (max-width: 425px) {
   //  margin: 100px 10% 0 10%;
