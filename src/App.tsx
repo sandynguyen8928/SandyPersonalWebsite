@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './pages/NavBar/NavBar';
 import HomePage from 'pages/HomePage/HomePage';
 import AboutPage from "./pages/AboutPage/AboutPage";
+import ExperiencePage from "./pages/ExperiencePage/ExperiencePage";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <NavBar />
             <HomePage />
             <AboutPage />
+            <ExperiencePage />
         </Router>
   );
 }

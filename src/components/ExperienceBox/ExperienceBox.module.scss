@@ -1,0 +1,55 @@
+.BoxStyled {
+  display: flex;
+  width: 70%;
+  margin: auto auto 50px;
+}
+
+.ParentBox {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0 15px 0;
+}
+
+.LeftChild{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.RightChild{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  align-content: center;
+}
+
+.Date {
+  font-stretch: extra-expanded;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.Location {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #000000;
+}
+
+//TODO: Add space between titles
+//.Titles {
+//  display: flex;
+//  flex-direction: column;
+//}
