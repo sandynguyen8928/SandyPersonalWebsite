@@ -4,6 +4,7 @@ import NavBar from './pages/NavBar/NavBar';
 import HomePage from 'pages/HomePage/HomePage';
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ExperiencePage from "./pages/ExperiencePage/ExperiencePage";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <HomePage />
             <AboutPage />
             <ExperiencePage />
+            <ProjectPage />
         </Router>
   );
 }
