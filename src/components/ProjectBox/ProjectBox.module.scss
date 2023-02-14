@@ -1,0 +1,46 @@
+.ProjectBoxStyled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.ProjectBoxContent {
+  margin: 25px 0 25px 0;
+}
+
+.ImageStyled {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.Socials {
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 #000000;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transform: translate(5px, 5px);
+  }
+}
+
+.Titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.BottomTitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Links {
+  display: flex;
+}

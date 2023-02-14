@@ -1,0 +1,13 @@
+.ProjectPageStyled {
+  margin: 5%;
+}
+
+
+.ProjectContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ProjectContainer>* {
+  flex: 1 1 50%;
+}
