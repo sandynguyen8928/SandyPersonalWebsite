@@ -19,8 +19,8 @@ const ExperienceBox:React.FC<Props> = ({date, company, position, location, tasks
                 <div className={styles.LeftChild}>
                     <div className={styles.Date}>{date}</div>
                     <div className={styles.Titles}>
-                        <TextBoxTitle title={company}/>
-                        <TextBoxSubtitle subtitle={position}/>
+                        <TextBoxTitle title={company} addClassName={styles.titleStyled}/>
+                        <TextBoxSubtitle subtitle={position} addClassName={styles.subtitleStyled}/>
                     </div>
                     <div className={styles.Location}>{location}</div>
                 </div>
