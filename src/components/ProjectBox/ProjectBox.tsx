@@ -4,6 +4,7 @@ import styles from './ProjectBox.module.scss';
 import TextBoxTitle from "../TextBoxTitle/TextBoxTitle";
 import TextBoxSubtitle from "../TextBoxSubtitle/TextBoxSubtitle";
 import githublogo from 'assets/github.png';
+import linkicon from 'assets/link.png';
 
 interface Props {
     title: string;
@@ -12,7 +13,11 @@ interface Props {
     website?: string;
     image: string;
     alt: string;
+    description?: string;
+    languages?: string;
 }
+
+//TODO: ADD PROJECT DESCRIPTION
 
 const ProjectBox:React.FC<Props> = ({title, type, github, website, image, alt}) => {
     return (
@@ -26,14 +31,21 @@ const ProjectBox:React.FC<Props> = ({title, type, github, website, image, alt}) 
                         <TextBoxTitle title={title} addClassName={styles.titleStyled}/>
                         <div className={styles.BottomTitle}>
                             <TextBoxSubtitle subtitle={type} />
-                            <a href={github} target="_blank" rel="noopener noreferrer" className={styles.Links}>
-                                <img className={styles.Socials} src={githublogo} alt="Github logo" />
-                            </a>
+                            <div className={styles.Socials}>
+                                {github ?
+                                    <a href={github} target="_blank" rel="noopener noreferrer" className={styles.Links}>
+                                        <img className={styles.Icons} src={githublogo} alt="Github logo" />
+                                    </a> : null}
+                                {website ?
+                                    <a href={website} target="_blank" rel="noopener noreferrer" className={styles.Links}>
+                                        <img className={styles.Icons} src={linkicon} alt="Github logo" />
+                                    </a> : null}
+                            </div>
                         </div>
                     </div>
                 </div>
 
-            }/>
+            } addClassName={styles.ProjectBoxSize}/>
         </div>
     )
 }

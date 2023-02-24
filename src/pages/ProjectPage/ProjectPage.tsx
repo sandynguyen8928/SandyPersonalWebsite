@@ -18,10 +18,11 @@ const ProjectPage = () => {
                 <ProjectBox title="Splendor" type="School Project"
                             image={splendor} alt={"Personal Website Home Page"}/>
                 <ProjectBox title="SOCS TA Management" type="School Project"
-                            github="https://github.com/sandynguyen8928/sandy-personal-website"
+                            github="https://github.com/sandynguyen8928/SOCSTAManagement"
+                            website="https://www.cs.mcgill.ca/~slee347/SOCSTAManagement/login.php"
                             image={socs} alt={"Personal Website Home Page"}/>
                 <ProjectBox title="Mental Health Alphabet" type="Hackathon"
-                            github="https://github.com/sandynguyen8928/sandy-personal-website"
+                            github="https://github.com/sandynguyen8928/MentalHealthAlphabet"
                             image={MHA} alt={"Personal Website Home Page"}/>
             </div>
         </div>

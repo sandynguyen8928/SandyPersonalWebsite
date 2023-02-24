@@ -6,22 +6,30 @@
 }
 
 .ProjectBoxContent {
-  margin: 25px 0 25px 0;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.ProjectBoxSize {
+  width: 80%;
+  height: 100%;
 }
 
 .ImageStyled {
   display: flex;
-  width: 600px;
+  width: 100%;
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
   margin-bottom: 15px;
 }
 
-.Socials {
+.Icons {
+  display: flex;
   height: 40px;
   border-radius: 10px;
   box-shadow: 5px 5px 0 #000000;
+  margin-left: 20px;
 
   &:hover {
     cursor: pointer;
@@ -37,10 +45,13 @@
 
 .BottomTitle {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 .Links {
   display: flex;
+}
+
+.Socials {
+  display: flex;
+  margin-left: auto;
 }
