@@ -23,6 +23,7 @@ const ProjectPage = () => {
                             image={socs} alt={"Personal Website Home Page"}/>
                 <ProjectBox title="Mental Health Alphabet" type="Hackathon"
                             github="https://github.com/sandynguyen8928/MentalHealthAlphabet"
+                            website="https://devpost.com/software/mental-health-alphabet"
                             image={MHA} alt={"Personal Website Home Page"}/>
             </div>
         </div>
