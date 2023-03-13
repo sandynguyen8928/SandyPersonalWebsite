@@ -1,0 +1,48 @@
+.FooterStyled {
+  display: flex;
+  margin: 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.FooterLeft {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  line-height: 0;
+  width: 33.333%;
+}
+
+.FooterCenter {
+  display: flex;
+  width: 33.333%;
+  justify-content: center;
+}
+
+.penguinCenter {
+  display: flex;
+  height: 100px;
+}
+
+.FooterRight {
+  display: flex;
+  width: 33.333%;
+  justify-content: flex-end;
+}
+
+.Socials {
+  display: flex;
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 #000000;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transform: translate(5px, 5px);
+  }
+}
